@@ -190,7 +190,7 @@ async function startServer() {
       const frameFiles = fs.readdirSync(analysisFramesDir).sort();
       log(`[${taskId}] Extracted ${frameFiles.length} frames.`);
       const framesData = frameFiles.map(file => ({
-        timestamp: parseInt(file.match(/\d+/)![0]) * 10,
+        timestamp: (file.match(/\\d+/)?.map(Number)[0] ?? 0) * 10,
         path: path.join(analysisFramesDir, file)
       }));
 
