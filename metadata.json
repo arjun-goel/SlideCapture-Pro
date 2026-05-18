@@ -1,0 +1,8 @@
+{
+  "name": "LectureLens AI",
+  "description": "Automatically capture and organize lecture slides from YouTube videos into polished PDFs using AI-powered slide detection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
